@@ -28,14 +28,16 @@ export default function DetailPage() {
         <div className="container">
             <br />
             <br />
-            <div className="row">
-                <div className="col-4">
+            <div className="row" style={{border:"2px solid black", borderRadius:"14px"}}>
+                <br />
+                <br />
+                <div className="col-6" style={{display:"flex",justifyContent:"center",alignContent:"center"}}>
                     <div className="card" style={{width:"18rem", textAlign:"center", border:"none"}}>
                         <h5 className="card-title">{data.title}</h5>
                         <img src={data.images[0]} class="card-img-top" alt=""/>
                     </div>
                 </div>
-                <div className="col-8">
+                <div className="col-6" style={{display:"flex",justifyContent:"center",alignContent:"center"}}>
                     <div className="card" style={{width:"18rem", textAlign:"center", border:"none"}}>
                         <h5 className="card-title"><strong>Price: </strong>PKR {data.price}</h5>
                         <p className="card-text">{data.description}</p>
