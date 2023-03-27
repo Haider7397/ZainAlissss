@@ -1,7 +1,7 @@
 import axios from "axios";
 
 let axiosInstance = axios.create({
-    baseURL: "https://fakestoreapi.com/"
+    baseURL: "https://api.escuelajs.co/api/v1/"
 });
 
 export const get = async function (url){
